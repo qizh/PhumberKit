@@ -296,10 +296,16 @@ public final class PhoneNumberKit: NSObject {
     public class func defaultRegionCode() -> String {
 #if os(iOS) && !targetEnvironment(simulator) && !targetEnvironment(macCatalyst)
         let networkInfo = CTTelephonyNetworkInfo()
+		let carriers = networkInfo.serviceSubscriberCellularProviders
+		if let isoCountryCode = carriers?.values.compactMap(\.isoCountryCode).first {
+			return isoCountryCode.uppercased()
+		}
+		/*
         let carrier = networkInfo.subscriberCellularProvider
         if let isoCountryCode = carrier?.isoCountryCode {
             return isoCountryCode.uppercased()
         }
+		*/
 #endif
         let currentLocale = Locale.current
         if #available(iOS 10.0, *), let countryCode = currentLocale.regionCode {

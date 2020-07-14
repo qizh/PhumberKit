@@ -10,9 +10,19 @@ let package = Package(
 	],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(
-            name: "PhumberKit",
-            targets: ["PhumberKit"]
+		.library(
+			name: "PhumberKit",
+			targets: ["PhumberKit"]
+		),
+		.library(
+			name: "PhumberKitDynamic",
+			type: Product.Library.LibraryType.dynamic,
+			targets: ["PhumberKit"]
+		),
+		.library(
+			name: "PhumberKitStatic",
+			type: Product.Library.LibraryType.static,
+			targets: ["PhumberKit"]
 		),
     ],
     dependencies: [
