@@ -5,11 +5,15 @@ import PackageDescription
 
 let package = Package(
     name: "PhumberKit",
+	platforms: [
+		SupportedPlatform.iOS(SupportedPlatform.IOSVersion.v12)
+	],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "PhumberKit",
-            targets: ["PhumberKit"]),
+            targets: ["PhumberKit"]
+		),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,9 +24,14 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "PhumberKit",
-            dependencies: []),
+            dependencies: [],
+			resources: [
+				Resource.process("Resources/PhoneNumberMetadata.json"),
+			]
+		),
         .testTarget(
             name: "PhumberKitTests",
-            dependencies: ["PhumberKit"]),
+            dependencies: ["PhumberKit"]
+		)
     ]
 )

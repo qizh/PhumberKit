@@ -1,3 +1,3 @@
 # PhumberKit
 
-A description of this package.
+A clean copy of PhoneNumberKit
