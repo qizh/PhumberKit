@@ -10,13 +10,27 @@
             buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "PhumberKit_PhumberKitarget"
+               BuildableName = "PhumberKit_PhumberKitarget"
+               BlueprintName = "PhumberKit_PhumberKitarget"
+               ReferencedContainer = "container:">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
             buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "PhumberKit"
-               BuildableName = "PhumberKit"
-               BlueprintName = "PhumberKit"
+               BlueprintIdentifier = "PhumberKistatic"
+               BuildableName = "PhumberKistatic"
+               BlueprintName = "PhumberKistatic"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +42,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "PhumberKitTests"
-               BuildableName = "PhumberKitTests"
-               BlueprintName = "PhumberKitTests"
+               BlueprintIdentifier = "PhumberKitests"
+               BuildableName = "PhumberKitests"
+               BlueprintName = "PhumberKitests"
+               ReferencedContainer = "container:">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "PhumberKitarget"
+               BuildableName = "PhumberKitarget"
+               BlueprintName = "PhumberKitarget"
                ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +74,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "PhumberKitTests"
-               BuildableName = "PhumberKitTests"
-               BlueprintName = "PhumberKitTests"
+               BlueprintIdentifier = "PhumberKitests"
+               BuildableName = "PhumberKitests"
+               BlueprintName = "PhumberKitests"
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
@@ -60,7 +88,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       language = "ru"
       region = "UA"
-      launchStyle = "1"
+      launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
@@ -71,15 +99,6 @@
       allowLocationSimulation = "NO"
       viewDebuggingEnabled = "No"
       GPUProfilerEnabled = "No">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "PhumberKit"
-            BuildableName = "PhumberKit"
-            BlueprintName = "PhumberKit"
-            ReferencedContainer = "container:">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -90,9 +109,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "PhumberKit"
-            BuildableName = "PhumberKit"
-            BlueprintName = "PhumberKit"
+            BlueprintIdentifier = "PhumberKit_PhumberKitarget"
+            BuildableName = "PhumberKit_PhumberKitarget"
+            BlueprintName = "PhumberKit_PhumberKitarget"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>
